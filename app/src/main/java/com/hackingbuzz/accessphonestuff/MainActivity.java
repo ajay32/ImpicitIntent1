@@ -42,14 +42,14 @@ public class MainActivity extends Activity implements View.OnClickListener{
                 break;
 
             // this intent will show dialer first..
-            case R.id.call:
+            case R.id.dial:
                 i = new Intent(Intent.ACTION_DIAL,Uri.parse("tel:9582238254"));
                 startActivity(i); break;
 
 
             // dial directly dial the call
 
-            case R.id.dial:
+            case R.id.call:
                 i = new Intent(Intent.ACTION_CALL,Uri.parse("tel:+919582238254"));
                 startActivity(i); break;
 
